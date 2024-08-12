@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#stage {
+  margin: 0 auto;
+  width: 180px;
+  padding: 0 0 40px;
+}
+
+.perspective-on {
+  perspective: 1000px;
+}
+
+#rotate {
+  margin: 0 auto;
+  width: 450px;
+  height: 220px;
+  padding-top: 200px;
+  transform-style: preserve-3d;
+}
+
+.ring {
+  margin: 0 auto;
+  height: 80px;
+  width: 90px;
+  float: left;
+  transform-style: preserve-3d;
+}
+
+.slot {
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  box-sizing: border-box;
+  opacity: 0.9;
+  color: rgba(0,0,0,0.9);
+  background: #fff;
+  border: solid 2px #000;
+  backface-visibility: hidden;
+}
+
+.slot p {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 80px;
+  margin: 0;
+  text-align: center;
+}
+
+.go {
+  display: block;
+  margin: 0 auto;
+  padding:10px 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@keyframes spin-0 { 100% { transform: rotateX(-3705deg); } }
+@keyframes spin-1 { 100% { transform: rotateX(-3730.7deg); } }
+/* Add other spin keyframes here */
