@@ -52,11 +52,16 @@ body {
 .go {
   display: block;
   margin: 0 auto;
-  padding:10px 50px;
+  padding: 10px 50px;
   font-size: 20px;
   cursor: pointer;
 }
 
-@keyframes spin-0 { 100% { transform: rotateX(-3705deg); } }
-@keyframes spin-1 { 100% { transform: rotateX(-3730.7deg); } }
-/* Add other spin keyframes here */
+@keyframes back-spin {
+  100% { transform: rotateX(25.7deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotateX(25.7deg); }
+  100% { transform: rotateX(-3705deg); }
+}

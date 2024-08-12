@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slot Machine</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>초성 스핀</title>
+    <!-- CSS 파일 경로 하드코딩 -->
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
     <div id="stage" class="perspective-on">
@@ -14,6 +15,7 @@
         </div>
         <button class="go">스핀</button>
     </div>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- JavaScript 파일 경로 하드코딩 -->
+    <script src="/static/js/script.js"></script>
 </body>
 </html>
